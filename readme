@@ -1,0 +1,7 @@
+1、项目的代码是SocketClien.c,其他的.c大家可以参考，也可以忽略
+2、编译步骤：2.1 ：make rootServer  //成功会生成rootServer到system/bin/ 下面
+            2.2 ：接下来就是要让rootServer打包到img，
+                  这里可以：touch frameworks/base/cmds/bootanimation/BootAnimation.cpp
+                  目的是为了让系统可以检测到bootanimation有更新需要重新打包
+            2.3：直接进行 make既可以，因为只是为了触发打包，所以非常快
+            2.4：emulator启动模拟器
